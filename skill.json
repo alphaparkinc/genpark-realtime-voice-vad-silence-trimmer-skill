@@ -1,0 +1,33 @@
+{
+  "name": "genpark-realtime-voice-vad-silence-trimmer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Voice Activity Detection (VAD) audio silence boundary trimmer eliminating latency overhead for real-time conversational agents.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "voice-ai",
+  "tags": [
+    "vad",
+    "silence-trimmer",
+    "voice-agents",
+    "webrtc-dsp",
+    "latency-reduction"
+  ],
+  "inputs": {
+    "audio_frames": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "trim_id": {
+      "type": "string"
+    },
+    "speech_detected": {
+      "type": "boolean"
+    },
+    "total_latency_saved_ms": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
